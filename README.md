@@ -1,28 +1,31 @@
 # Amigo Secreto
 
-Este é um projeto simples em **JavaScript, HTML e CSS** que permite adicionar nomes de amigos a uma lista e sortear um amigo secreto aleatoriamente.
+Projeto simples em **JavaScript, HTML e CSS** para adicionar nomes de amigos e sortear um amigo secreto aleatoriamente.
 
 ---
 
-## 📝 Funcionalidades
+## Funcionalidades
 
-1. **Adicionar amigos**  
-   - O usuário digita o nome do amigo no campo de entrada.
-   - Ao clicar em **Adicionar**, o nome é incluído na lista.
-   - Se o campo estiver vazio, um alerta é exibido solicitando que insira um nome válido.
-
-2. **Exibir lista de amigos**  
-   - Todos os nomes adicionados são exibidos em uma lista `<ul>` na tela.
-   - A lista é atualizada sempre que um novo amigo é adicionado.
-
-3. **Sortear amigo secreto**  
-   - Ao clicar em **Sortear amigo**, um nome aleatório é selecionado da lista.
-   - O resultado é exibido em destaque na tela.
+- Adicionar nomes de amigos em uma lista.
+- Exibir a lista de amigos na tela.
+- Sortear um amigo secreto aleatoriamente.
 
 ---
 
-## 💻 Estrutura do Código
+## Como Usar
 
-### 1. Array de amigos
-```javascript
-let amigos = [];
+1. Abra o arquivo `index.html` no navegador.
+2. Digite o nome de um amigo no campo de entrada e clique em **Adicionar**.
+3. Os nomes aparecem na lista abaixo.
+4. Clique em **Sortear amigo** para ver quem foi sorteado.
+
+---
+
+## Estrutura HTML
+
+```html
+<input type="text" id="amigo" placeholder="Digite um nome">
+<button onclick="adicionarAmigo()">Adicionar</button>
+<ul id="listaAmigos"></ul>
+<ul id="resultado"></ul>
+<button onclick="sortearAmigo()">Sortear amigo</button>
